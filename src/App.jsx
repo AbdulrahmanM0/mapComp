@@ -14,11 +14,26 @@ function App() {
   }
 }
 
+async function fetchLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(successCallback);
+  } catch (error) {
+    // handle error
+    console.error(error);
+  }
+}
 
+function successCallback(position) {
+  // setLat(position.coords.latitude);
+  // setLong(position.coords.longitude);
+  console.log(position.coords)
+  console.log(position)
+  // fetchWeather();
+}
 
   return (
 
-<button onClick={handlePosition}>
+<button onClick={fetchLocation}>
   get position
 </button>
 
