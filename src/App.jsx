@@ -9,11 +9,12 @@ function App() {
   let handlePosition = () => {
     if (navigator) {
     console.log(navigator)
-    }
   }
+}
+console.log(navigator)
 
 
-  
+
   return (
 
 <button onClick={handlePosition}>
