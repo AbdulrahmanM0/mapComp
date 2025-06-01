@@ -11,7 +11,7 @@ function App() {
     console.log(navigator)
   }
 }
-console.log(navigator)
+console.log(navigator.geolocation.getCurrentPosition())
 
 
 
