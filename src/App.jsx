@@ -9,9 +9,10 @@ function App() {
   let handlePosition = () => {
     if (navigator) {
     console.log(navigator)
+    console.log(navigator.geolocation)
+    console.log(navigator.geolocation.getCurrentPosition())
   }
 }
-console.log(navigator.geolocation.getCurrentPosition())
 
 
 
