@@ -10,7 +10,7 @@ function App() {
     if (navigator) {
     console.log(navigator)
     console.log(navigator.geolocation)
-    console.log(navigator.geolocation.getCurrentPosition())
+    console.log(navigator.geolocation.getCurrentPosition((a)=>console.log(a)))
   }
 }
 
